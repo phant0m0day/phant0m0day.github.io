@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Changa+One');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300i,400');
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 100%;
+    font-family: 'Roboto Mono', monospace;
+}
+ul {
+    border-bottom: 2px solid #3d3d3d;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffcc32;
+    transition: 0.5s;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    -webkit-animation: fadein 0.5s; /* Safari and Chrome */
+    -moz-animation: fadein 0.5s; /* Firefox */
+    -ms-animation: fadein 0.5s; /* Internet Explorer */
+    -o-animation: fadein 0.5s; /* Opera */
+    animation: fadein 0.5s;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffcc32; color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#calendar {
+    float: right;
+    display: inline-block;
+}
+#active {
+    background-color: #ffcc32;
+    color: black;
+}
+.header {
+    height: 200px;
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    text-align: center;
+    transition: all 1.0s ease-out;
+    padding-top: 25px;
+}
+.headers {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 70px;
+    font-family: 'Changa One', cursive;
+}
+.header:hover {
+    height: 250px;
+    transition: all 1.0s ease-in;
+    background-color: #ffcc32;
+}
+.header:after {
+    height: 100px;
+    transition: all 1.0s ease-out;
+    background-color: black;
+    opacity: 0;
+}
+.header:hover::after {
+    opacity: 1;
+}
+#main-container {
+    min-height: calc(100vh - 70px);
+}
+#paragraph-container {
+    width: 50vh;
+    margin: 0 auto;
+    text-align: left;
+
+}
+.p-class {
+    word-break: break-word;
+    line-height: 2em;
+    text-indent: 2em;
+}
+.first-letter {
+    font-weight: bolder;
+    font-size: 30px;
+    color: #ffcc32;
+    margin-right: 2px;
+}
+.footer-distributed{
+	background-color: black;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: normal 16px sans-serif;
+	padding: 45px 50px;
+	margin-top: 80px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer-distributed .footer-left p{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links{
+	font-size:18px;
+	font-weight: bold;
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed p.footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+.footer-distributed p.footer-links a:hover {
+    color: #ffcc32;
+    transition: 0.5s;
+}
+
+.footer-distributed .footer-right{
+	float: right;
+	margin-top: 6px;
+	max-width: 180px;
+}
+
+.footer-distributed .footer-right a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-color:  #33383b;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-left: 3px;
+}
+.footer-distributed .footer-right a:hover {
+  background-color: #ffcc32;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		text-align: center;
+	}
+
+	.footer-distributed .footer-right{
+		float: none;
+		margin: 0 auto 20px;
+	}
+
+	.footer-distributed .footer-left p.footer-links{
+		line-height: 1.8;
+	}
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* For the contact page */
+input[type=text], #date-start, #date-through, #email, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  resize: none;
+}
+input[type=text]:focus, #date-start:focus, #date-through:focus, #email:focus, textarea:focus {
+  outline: 2px solid #ffcc32;
+  transition: 0.5s ease;
+}
+label {
+  padding: 12px 12px 12px 10px;
+  display: inline-block;
+}
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+input[type=submit]:hover {
+  background-color: #ffcc32;
+  color: black;
+  transition: 0.5s ease;
+}
+.form-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: 0 auto;
+  width: 50%;
+}
+/* Clear floats after the columns */
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
