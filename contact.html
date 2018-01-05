@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="../style/main.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-101445312-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-101445312-2');
+        </script>
+    </head>
+    <body>
+        <ul class="navbar-ul">
+            <li class="navbar-li"><a href="../index.html">Home</a></li>
+            <li class="navbar-li"><a href="staff.html">Staff</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">About</a>
+                <div class="dropdown-content">
+                    <a href="html/about/awards.html">Awards</a>
+                    <a href="html/about/boosters.html">Boosters</a>
+                    <a href="html/about/fundraisers.html">Fundraisers</a>
+                    <a href="html/about/media.html">Media</a>
+                    <a href="html/about/sponsors.html">Sponsors</a>
+                    <a  id="active" href="html/contact.html">Contact</a>
+                </div>
+            </li>
+            <li class="navbar-li" id="calendar"><a href="html/calendar.html">Calendar</a></li>
+        </ul>
+        <div id="main-container">
+            <div class="header">
+                <h1 class="headers">Contact || SNHS Band</h1>
+            </div>
+            <div id="paragraph-container">
+              <p class="p-class">
+                <span class="first-letter">I</span>f you are requesting to miss a band function, you can do so here. Make sure to include your name, email, reason, and date(s) missing.
+                Also, make sure you request the absence a week in advance. Thank you!
+              </p>
+            </div>
+            <div class="form-container">
+              <form action="http://formspree.io/taylor@puckettonline.net" method="POST">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="name">Name: </label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="name" name="name" placeholder="Your name..." required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="email">Email: </label>
+                  </div>
+                  <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Your email..." required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="date-start">Date Missing: </label>
+                  </div>
+                  <div class="col-75">
+                    <input type="date" id="date-start" name="date-start" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="date-through">Date Through: </label>
+                  </div>
+                  <div class="col-75">
+                    <input type="date" id="date-through" name="date-through" required>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="reason">Reason: </label>
+                  </div>
+                  <div class="col-75">
+                    <textarea id="reason" name="reason" placeholder="Reason..." style="height: 200px" required></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+        </div>
+        <footer class="footer-distributed">
+            <div class="footer-right">
+                <a href="#">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </div>
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    -
+                    <a href="html/staff.html">Staff</a>
+                    -
+                    <a href="html/about.html">About</a>
+                    -
+                    <a href="html/calendar.html">Calendar</a>
+                </p>
+                <p>Sullivan North Band - 2533 N John B Dennis Hwy, Kingsport, TN 37660 - 423-354-1439</p>
+            </div>
+        </footer>
+    </body>
+</html>
